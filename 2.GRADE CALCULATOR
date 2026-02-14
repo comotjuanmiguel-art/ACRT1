@@ -1,19 +1,19 @@
-score = int(input("input your numeric grade to check if you passed: "))
+score = int(input("Please enter your grade [0-100]: "))
 
 if score< 60:
     print("grade is less than 60 there you failed the subject")
     
 elif score  >=60 and score <= 69:
-    print("your grade is is within 60 - 69 therefore you got a D")
+    print("your grade is is within 60 - 69 therefore you got a D - needs improvment")
     
 elif score >=70 and score <= 79:
-    print("your grade is is within 70 - 79 therefore you got a C")
+    print("your grade is is within 70 - 79 therefore you got a C - good ")
     
 elif score >=80 and score<= 89:
-    print("your grade is is within 80 - 89 therefore you got a B")
+    print("your grade is is within 80 - 89 therefore you got a B - very good!")
     
 elif score >=90 and score <= 100:
-    print("your grade is is within 90 - 100 therefore you got a A")
+    print("your grade is is within 90 - 100 therefore you got a A - HUWOW")
     
 else:
     print("please give an appropriate value your grade cannot be lower than 0 or greater than 100")
