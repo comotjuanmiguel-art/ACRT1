@@ -1,0 +1,13 @@
+CORRECT_USERNAME = "admin"
+CORRECT_PASSWORD = "securepass123"
+
+username_input = input("Enter username: ")
+password_input = input("Enter password: ")
+
+if username_input == CORRECT_USERNAME:
+    if password_input == CORRECT_PASSWORD:
+        print("Welcome! Login successful.")
+    else:
+        print("Incorrect password.")
+else:
+    print("User not found.")
