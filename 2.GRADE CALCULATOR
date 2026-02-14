@@ -1,19 +1,19 @@
-v = int(input("input your numeric grade to check if you passed: "))
+score = int(input("input your numeric grade to check if you passed: "))
 
-if v < 60 and v > 1:
-    print(f"grade {v} less than 60 there you failed the subject")
+if score< 60:
+    print("grade is less than 60 there you failed the subject")
     
-elif v >=60 and v <= 69:
-    print(f"your grade is {v} is within 60 - 69 therefore you got a D")
+elif score  >=60 and score <= 69:
+    print("your grade is is within 60 - 69 therefore you got a D")
     
-elif v >=70 and v <= 79:
-    print(f"your grade is {v} is within 70 - 79 therefore you got a C")
+elif score >=70 and score <= 79:
+    print("your grade is is within 70 - 79 therefore you got a C")
     
-elif v >=80 and v <= 89:
-    print(f"your grade is {v} is within 80 - 89 therefore you got a B")
+elif score >=80 and score<= 89:
+    print("your grade is is within 80 - 89 therefore you got a B")
     
-elif v >=90 and v <= 100:
-    print(f"your grade is {v} is within 90 - 100 therefore you got a A")
+elif score >=90 and score <= 100:
+    print("your grade is is within 90 - 100 therefore you got a A")
     
 else:
     print("please give an appropriate value your grade cannot be lower than 0 or greater than 100")
