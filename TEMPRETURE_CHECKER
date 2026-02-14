@@ -3,7 +3,6 @@ current_temp = int(input("Enter the current temperature: "))
 
 if current_temp > 30:
     print("Hot day! Stay hydrated.")
+
 elif current_temp < 30:
-    print("Pleasant weather!.")  
-else:
-    print("are you sure it's a temperature")
+    print("Pleasant weather!")
