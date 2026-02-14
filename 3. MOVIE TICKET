@@ -1,0 +1,36 @@
+Day = input("Day (weekday/weekend): ").lower()
+Type = input("Type (regular/student/senior): ").lower()
+Time = int(input("Showtime hour (9-22): "))
+Quantity = int(input("Amount of ticket: "))
+
+stdiscount = "0%"
+srdiscount = "0%"
+tdiscount = "0%"
+qdiscount = "0%"
+
+if Day == "weekend":
+    baseprice = 300
+    price = 300
+else:
+    baseprice = 200
+    price = 200
+    
+if Type == "student":
+    price = price * 0.80
+    stdiscount = "20%"
+elif Type == "senior":
+    price = price * 0.70 
+    srdiscount = "30%"
+ 
+
+if Time < 12:
+    price = price * 0.90
+    tdiscount = "10%"
+    
+if Quantity > 5:
+    price = price * 0.95
+    qdiscount = "5%"
+print(f'''Final ticket price:the base price is {baseprice} + 
+                             student discount {stdiscount} + 
+                             senior discount {srdiscount} + Matinee Discount {tdiscount} +
+                             5 or more ticket discount {qdiscount} with the final price being {price:.2f}''')
