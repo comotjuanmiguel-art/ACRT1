@@ -1,0 +1,15 @@
+age = int(input("Enter your age: "))
+
+
+id_input = input("Do you have a valid ID (yes/no)? ").strip().lower()
+has_valid_id = id_input == "yes"
+
+if age >= 18 and has_valid_id:
+    result = "Eligible!"
+    if age >= 60:
+        result += " You qualify for a senior discount."
+else:
+    result = "Not eligible"
+
+
+print(result)
