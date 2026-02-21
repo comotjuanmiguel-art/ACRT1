@@ -1,0 +1,63 @@
+print("=== MOVIE TICKET SYSTEM ===")
+
+# ---------- PART A: USER INPUT ----------
+day = input("Day (weekday/weekend): ").lower()
+customer_type = input("Customer type (regular/student/senior): ").lower()
+show_time = int(input("Show time (24-hour format): "))
+tickets = int(input("Number of tickets: "))
+
+# ---------- PART B: BASE PRICE ----------
+if day == "weekday":
+    base_price = 200
+else:
+    base_price = 300
+
+subtotal = base_price * tickets
+
+# ---------- DISCOUNTS ----------
+student_discount = 0
+senior_discount = 0
+matinee_discount = 0
+group_discount = 0
+
+# Customer discount
+if customer_type == "student":
+    student_discount = subtotal * 0.20
+elif customer_type == "senior":
+    senior_discount = subtotal * 0.30
+
+# Matinee discount (before 12)
+if show_time < 12:
+    matinee_discount = subtotal * 0.10
+
+# Group discount (5 or more tickets)
+if tickets >= 5:
+    group_discount = subtotal * 0.05
+
+# ---------- TOTAL ----------
+total_discount = student_discount + senior_discount + matinee_discount + group_discount
+total = subtotal - total_discount
+
+# ---------- OUTPUT ----------
+print("\n--- RECEIPT ---")
+print(f"Day: {day}")
+print(f"Customer type: {customer_type}")
+print(f"Show time: {show_time}")
+print(f"Number of tickets: {tickets}\n")
+
+print(f"Base price: {base_price:.2f} x {tickets} = {subtotal:.2f}")
+
+if student_discount > 0:
+    print(f"Student discount (20%): -{student_discount:.2f}")
+
+if senior_discount > 0:
+    print(f"Senior discount (30%): -{senior_discount:.2f}")
+
+if matinee_discount > 0:
+    print(f"Matinee discount (10%): -{matinee_discount:.2f}")
+
+if group_discount > 0:
+    print(f"Group discount (5%): -{group_discount:.2f}")
+
+print(f"\nTOTAL: {total:.2f}")
+print("Thank you for your purchase!")
