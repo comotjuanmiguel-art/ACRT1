@@ -1,0 +1,20 @@
+your_students = ["cedrik","jaren","kaizer","miguel","elliana"]
+
+print("students")
+
+newstudent = input("Enter your student: ")
+newstudent = input("Enter your student: ")
+my_name = input("Enter your name: ")
+remove_student = input("Enter the student you want to be removed: ")
+    
+your_students.append(newstudent)
+your_students.insert(0,newstudent)
+
+print(your_students)
+print("Updated list of students: ")
+your_students[2] = my_name
+print(your_students)
+your_students.remove(remove_student)
+print(your_students)
+your_students.pop(-1)
+print(your_students.pop(-1))
