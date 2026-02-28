@@ -1,0 +1,12 @@
+#LA 13
+
+for i in range(11):
+  print(i)
+  
+for i in range(12,21,2):
+  print(i)
+  
+Guessing_game = True
+while Guessing_game:
+    guess = input("Enter your aswer: ")
+    
