@@ -1,0 +1,12 @@
+# For Visual studio code
+
+import random as rnd 
+
+menu = ["burger","hotdog","pizza","ham"]
+print(menu)
+print(rnd.choice(menu))
+
+# step 1. always save before running
+# step 2. put your py.name
+# example = py miguel.py 
+# Enter 
