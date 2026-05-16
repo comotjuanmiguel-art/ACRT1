@@ -10,3 +10,9 @@ print(rnd.choice(menu))
 # step 2. put your py.name
 # example = py miguel.py 
 # Enter 
+
+# If ever ma forgot how to put your name at your file sa VSC 
+# just create new file
+# save
+# and put your name 
+# DONE!
